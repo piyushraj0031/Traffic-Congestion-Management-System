@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>About Us</title>
+  <style>
+    .accordion-item {
+      margin-bottom: 20px;
+    }
+
+    .accordion-button {
+      background-color:#C6CFD6;
+      color: #003031;
+    }
+
+    .accordion-body {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    img {
+      max-width: 40%;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      text-align: center;
+      padding: 20px 0;
+      font-family: serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .spaced-list li {
+      margin-bottom: 10px;
+    }
+
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <img src="../static/Project.png" alt="About Project">
+  </header>
+  <main>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Project Overview
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The project aims to address the pressing issue of <strong> traffic congestion through the implementation of
+              an intelligent traffic management system. </strong> By leveraging machine learning algorithms,
+            specifically YOLO object detection, the system utilizes live images from CCTV cameras at traffic junctions
+            to calculate real-time traffic density. This information is then used to dynamically adjust signal timers,
+            optimizing traffic flow and reducing congestion on roads. The ultimate goals of the project include
+            providing faster transit for commuters, reducing fuel consumption, minimizing environmental impact, and
+            enhancing overall road safety. Through the integration of cutting-edge technology and innovative algorithms,
+            the project seeks to revolutionize traditional traffic management approaches and pave the way for smarter,
+            more efficient transportation systems.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Problem Statement
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The project targets several critical challenges associated with traffic congestion and management, aiming to
+            mitigate the negative impacts on public safety, environmental sustainability, and economic efficiency. These
+            challenges include:
+            <br>
+            <br>
+            <ol>
+              <li><strong> Traffic Police Scheduling: </strong> Current traffic police scheduling methods lack
+                optimization and responsiveness, resulting in suboptimal coverage and delayed responses to incidents.
+                The project seeks to enhance scheduling efficiency through proactive planning and real-time adjustments
+                based on traffic conditions and incident predictions. </li>
+              <li><strong> Visibility and Coverage: </strong> There is a need to increase the visibility of traffic
+                police in high-traffic areas and hotspot locations to deter violations and respond quickly to
+                emergencies. The project aims to develop systems for optimal patrol vehicle deployment and coverage,
+                ensuring maximum effectiveness in crime prevention and traffic regulation enforcement. </li>
+              <li><strong> Delayed Emergency Response: </strong> Congestion on roadways hinders the response time of
+                emergency vehicles, increasing the risk of fatalities and exacerbating the severity of accidents. The
+                project focuses on improving traffic clearance mechanisms and providing real-time routing assistance to
+                emergency fleets, enabling faster and more efficient responses to incidents.</li>
+              <li><strong> Accident Prevention and Safety: </strong> Road accidents, often caused by factors like
+                speeding, reckless driving, and traffic violations, contribute significantly to fatalities and injuries.
+                The project aims to leverage intelligent traffic management systems to minimize accident rates through
+                enhanced enforcement of traffic regulations, proactive monitoring of driver behavior, and timely
+                intervention by traffic authorities.</li>
+              <li><strong> Losses due to Congestion: </strong> Traffic congestion results in substantial economic losses
+                due to productivity decline, increased fuel consumption, and environmental impacts. The project seeks to
+                mitigate these losses by implementing simulation-based traffic management strategies that optimize
+                traffic flow, minimize congestion-related damages, and improve overall transportation efficiency.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Solution Approach
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The project employs a multifaceted approach to effectively manage traffic congestion through the allocation
+            of traffic light timings. This approach encompasses several key methodologies and techniques:
+            <br>
+            <br>
+            <ol>
+              <li><strong> Real-time Traffic Flow Estimation: </strong>The project leverages low-quality surveillance
+                video data to estimate real-time traffic flow. Utilizing the YOLOv4 algorithm trained with a custom
+                dataset, the system detects vehicles of various classes and tracks their movement direction, enabling
+                accurate estimation of traffic density and flow</li>
+              <li><strong> YOLO Object Detection for Vehicle Detection: </strong>A custom YOLO model is trained to
+                detect vehicles, including cars, buses, trucks, vans, and bikes, from CCTV video data. This model
+                provides high accuracy and efficiency in identifying vehicles within frames, forming the basis for
+                traffic flow estimation.</li>
+              <li><strong> Traffic Flow Estimation Module: </strong>The traffic flow estimation module comprises three
+                sub-tasks: vehicle detection, vehicle tracking, and traffic flow estimation. Vehicle detection locates
+                vehicles within frames, while vehicle tracking monitors their movement between frames. The system then
+                calculates traffic flow based on vehicle counts and movement directions. </li>
+              <li><strong> Signal Switching Algorithm: </strong>The project incorporates a signal switching algorithm
+                that dynamically adjusts traffic light timings based on traffic density and other factors. This
+                algorithm sets green signal timers for each lane, considering factors such as the number of vehicles,
+                lane count, and average vehicle speed. Red signal times are updated accordingly to ensure smooth traffic
+                flow.</li>
+              <li><strong> Simulation Module for System Evaluation: </strong>A simulation module is developed using
+                Pygame to visualize the proposed system and compare it with existing static systems. This simulation
+                includes a 4-way intersection with traffic signals, vehicles of various classes, and dynamic signal
+                timing based on the algorithm. It provides insights into system effectiveness and performance under
+                different scenarios.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Key Features
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+              <li><strong>YOLO-based Vehicle Detection: </strong>The system utilizes YOLO (You Only Look Once) for
+                accurate and efficient vehicle detection. A custom YOLO model is trained to detect vehicles of various
+                classes including cars, bikes, buses, trucks, and rickshaws.</li>
+              <li><strong>Custom Dataset Preparation: </strong>A dataset for training the YOLO model is prepared by
+                scraping images from Google and manually labeling them using LabelIMG, ensuring a diverse and
+                comprehensive dataset for effective model training.</li>
+              <li><strong>Signal Switching Algorithm: </strong>An intelligent signal switching algorithm dynamically
+                adjusts traffic light timings based on real-time traffic density. It calculates green signal times
+                considering factors such as vehicle count, lane count, traffic density, and average vehicle speed to
+                optimize traffic flow.</li>
+              <li><strong>Efficient Traffic Flow Estimation: </strong>The system estimates real-time traffic flow by
+                classifying vehicles and analyzing their movement directions. It employs the trained YOLO model to
+                detect vehicles, tracks their movements, and calculates traffic density for effective traffic
+                management.</li>
+              <li><strong>Simulation Module for Visualization: </strong>A simulation module developed using Pygame
+                provides a visual representation of the proposed system. It simulates real-life traffic scenarios at a
+                4-way intersection with dynamic traffic signals, vehicle movements, and signal switching based on the
+                algorithm, aiding in system evaluation and comparison with existing static systems.</li>
+              <li><strong>Comprehensive Working Algorithm: </strong>The system's signal switching algorithm considers
+                various factors such as processing time, lane count, vehicle count, traffic density, lag time, average
+                vehicle speed, and minimum/maximum green light duration to ensure efficient traffic management and
+                prevent congestion.</li>
+              <li><strong>Scalability and Adaptability: </strong> The system's modular design allows for scalability and
+                adaptability to different intersections with minimal modifications. It can be easily extended to complex
+                locations and adjusted based on the degree of complexity and specific intersection characteristics.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Benefits
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+              <li><strong>Improved Traffic Flow: </strong>By dynamically adjusting traffic signal timings based on
+                real-time traffic density, the project optimizes traffic flow at intersections. This reduces congestion,
+                minimizes wait times, and ensures smoother vehicular movement, enhancing overall transportation
+                efficiency.</li>
+              <li><strong>Reduced Congestion and Delays: </strong>With efficient traffic management algorithms in place,
+                the project mitigates congestion and reduces delays for road users. This leads to quicker transit times,
+                less frustration among commuters, and improved productivity for individuals and businesses.</li>
+              <li><strong>Enhanced Safety: </strong>By optimizing traffic flow and reducing congestion, the project
+                contributes to enhanced road safety. Reduced congestion lowers the likelihood of accidents and
+                collisions, promoting safer travel conditions for motorists, pedestrians, and cyclists alike.</li>
+              <li><strong>Lower Fuel Consumption and Emissions: </strong>The project's focus on minimizing congestion
+                and improving traffic flow results in reduced idling times and smoother vehicle movements. This leads to
+                lower fuel consumption and emissions, contributing to environmental sustainability and air quality
+                improvement.</li>
+              <li><strong>Economic Benefits: </strong>Improved traffic flow and reduced congestion translate to economic
+                benefits for communities and businesses. Reduced travel times and fuel consumption result in cost
+                savings for individuals and businesses, while enhanced transportation efficiency fosters economic growth
+                and development.</li>
+              <li><strong>Community Well-being: </strong>By creating a more efficient and safer transportation system,
+                the project enhances the overall well-being of the community. Residents experience less stress and
+                frustration associated with traffic congestion, leading to improved quality of life and overall
+                satisfaction with the transportation infrastructure.</li>
+              <li><strong>Accessibility and Mobility: </strong>The project's focus on optimizing traffic flow ensures
+                better accessibility and mobility for all road users, including pedestrians, cyclists, and public
+                transportation users. This promotes inclusivity and facilitates easier movement within urban areas,
+                improving overall accessibility to essential services and amenities. </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Technology Stack
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+              <li><strong>YOLO (You Only Look Once): </strong>YOLO algorithm is employed for real-time object detection,
+                particularly for detecting vehicles at intersections. It utilizes convolutional neural networks (CNN) to
+                efficiently detect objects with high accuracy.</li>
+              <li><strong>LabelIMG: </strong>LabelIMG is used for graphically labeling images, which is crucial for
+                training the object detection model. It provides a user-friendly interface for annotating images with
+                bounding boxes and class labels.</li>
+              <li><strong>OpenCV (Open Source Computer Vision Library): </strong>OpenCV is utilized for various computer
+                vision tasks, including image processing, object detection, and video analysis. It offers a
+                comprehensive set of algorithms and functions for implementing vision-based applications.</li>
+              <li><strong>JSON (JavaScript Object Notation): </strong>JSON is used as a lightweight data-interchange
+                format for exchanging data between different components of the system. It facilitates the communication
+                of object detection results and configuration parameters in a structured format.</li>
+              <li><strong>argHandler: </strong>The argHandler library is employed for handling command-line arguments
+                and configuring the logging framework of the system. It simplifies the process of parsing command-line
+                inputs and setting up logging configurations.</li>
+              <li><strong>matplotlib.pyplot: </strong>matplotlib.pyplot is utilized for generating visualizations and
+                plots, particularly for displaying simulation results and traffic signal timing information. It provides
+                a convenient interface for creating and customizing various types of plots.</li>
+              <li><strong>Cython: </strong>Cython is utilized for optimizing performance-critical parts of the code by
+                converting Python code to C. It enables the integration of Python with C data types, resulting in faster
+                execution of certain operations.</li>
+              <li><strong>NumPy: </strong>NumPy is used for handling large multi-dimensional arrays and performing
+                mathematical operations on them. It provides efficient array operations and mathematical functions,
+                making it suitable for numerical computations in the system.</li>
+              <li><strong>time: </strong>The time module is employed for measuring and manipulating time-related aspects
+                of the system, such as calculating execution times and scheduling tasks.</li>
+              <li><strong>math: </strong>The math module is used for performing mathematical operations and calculations
+                within the system, such as calculating intersection over union (IOU) scores in object detection.</li>
+              <li><strong>threading: </strong>Threading module is employed for implementing multi-threaded execution,
+                allowing the system to run multiple tasks concurrently. It is particularly useful for handling
+                asynchronous tasks such as vehicle detection and signal switching.</li>
+              <li><strong>pygame: </strong>pygame is utilized for developing multimedia applications, particularly for
+                creating simulations and visualizations of traffic scenarios. It provides functionality for handling
+                graphics, input devices, and sound, making it suitable for building interactive applications.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Implementation Process
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol class="spaced-list">
+              <li>Project Planning and Requirements Gathering:</li>
+              <ul>
+                <li>Define project goals, scope, and requirements.</li>
+                <li>Identify stakeholders and gather input from traffic management experts, stakeholders, and end-users.
+                </li>
+                <li>Create a detailed project plan outlining tasks, timelines, and resource requirements.</li>
+              </ul>
+              <li>Data Collection and Preparation:</li>
+              <ul>
+                <li>Gather raw data, including images and videos of traffic intersections, from various sources such as
+                  public databases or traffic surveillance cameras.</li>
+                <li>Annotate the collected data by labeling vehicles and other relevant objects using tools like
+                  LabelIMG.</li>
+                <li>Clean and preprocess the data to remove noise and inconsistencies, ensuring high-quality training
+                  data for the object detection model.</li>
+              </ul>
+              <li>Model Training and Optimization:</li>
+              <ul>
+                <li>Choose a suitable object detection model architecture, such as YOLO, based on performance
+                  requirements and computational resources.</li>
+                <li>Train the selected model using the annotated dataset, adjusting hyperparameters and model
+                  configurations as needed to optimize performance.</li>
+                <li>Evaluate the trained model using validation data to assess its accuracy and fine-tune the model to
+                  improve performance.</li>
+              </ul>
+              <li>Integration with OpenCV and Algorithm Development:</li>
+              <ul>
+                <li>Integrate the trained object detection model with OpenCV library to enable real-time vehicle
+                  detection.</li>
+                <li>Develop algorithms for traffic signal switching based on the output of the detection module,
+                  considering factors such as traffic density, vehicle count, and signal timing constraints.</li>
+                <li>Implement the signal switching algorithm, ensuring seamless transition between green and red signals
+                  based on real-time traffic conditions.</li>
+              </ul>
+              <li>Simulation Development: </li>
+              <ul>
+                <li>Develop a simulation module using pygame to visualize the traffic management system in action.</li>
+                <li>Design a 4-way intersection scenario with traffic signals and vehicle movements.</li>
+                <li>Implement functionality for displaying signal timers, vehicle counts, and real-time traffic
+                  simulation.</li>
+              </ul>
+              <li>Testing and Validation:</li>
+              <ul>
+                <li>Conduct comprehensive testing of the entire system to identify and address any bugs, errors, or
+                  performance issues.</li>
+                <li>Validate the accuracy and effectiveness of the object detection model and signal switching algorithm
+                  using simulated and real-world traffic scenarios.</li>
+                <li>Gather feedback from stakeholders and end-users to ensure that the system meets their requirements
+                  and expectations.</li>
+              </ul>
+            </ol>
+            <h4>Challenges Faced and Solutions Adopted: </h4>
+            <br>
+            <ol class="spaced-list">
+              <li>Data Annotation Complexity: </li>
+              <ul>
+                <li>Annotating a large volume of traffic data manually can be time-consuming and labor-intensive.</li>
+                <li><strong>Solutions: </strong>Utilize semi-automated annotation tools and crowdsourcing platforms to
+                  accelerate the annotation process and ensure dataset quality.</li>
+              </ul>
+              <li>Real-Time Processing Constraints: </li>
+              <ul>
+                <li>Real-time object detection and signal switching require efficient algorithms and optimized code to
+                  meet processing time requirements.</li>
+                <li><strong> Solutions: </strong>Implement parallel processing techniques, optimize algorithms for
+                  speed, and leverage hardware acceleration (e.g., GPUs) to improve performance.</li>
+              </ul>
+              <li>Algorithm Robustness: </li>
+              <ul>
+                <li>Developing robust algorithms for signal switching that can adapt to diverse traffic conditions and
+                  handle edge cases effectively.</li>
+                <li><strong>Solution: </strong>Incorporate machine learning techniques for dynamic parameter tuning and
+                  adaptive decision-making based on real-time feedback from the detection module.</li>
+              </ul>
+              <li>Simulation Realism:</li>
+              <ul>
+                <li>Creating a realistic traffic simulation environment that accurately reflects real-world traffic
+                  behavior and interactions.</li>
+                <li><strong> Solutions: </strong>Incorporate realistic vehicle movement models, traffic flow dynamics,
+                  and environmental factors (e.g., weather conditions) into the simulation to enhance realism and
+                  fidelity.</li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Data Analysis and Insights
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol class="spaced-list">
+              <li>Challenges: </li>
+              <ul>
+                <li>Integrating data from diverse sources like cameras, GPS, and sensors is difficult due to privacy
+                  concerns and technical issues.</li>
+                <li>Processing asynchronous data streams and merging them into a cohesive view of traffic conditions
+                  poses complexity.</li>
+                <li>Accurate data filtration is crucial for predictive applications to optimize algorithms effectively.
+                </li>
+              </ul>
+              <li>Measures: </li>
+              <ul>
+                <li>Traffic flow improvement is achieved through tools like ramp metering, adaptive signal control, and
+                  dynamic route information panels.</li>
+                <li>Some systems prioritize safety, livability, and sustainability by reducing fuel consumption and
+                  emissions.</li>
+                <li>Traveler information is accessible via various channels, enabling real-time updates and meeting user
+                  expectations.</li>
+              </ul>
+              <li>Players and Cooperation: </li>
+              <ul>
+                <li>Government agencies manage traffic, while the private sector provides information services.</li>
+                <li>Collaboration between agencies for traffic management is improving, with a shift towards
+                  network-oriented approaches.</li>
+                <li>Cooperation between government and private sectors can sometimes be conflicting due to differing
+                  interests.</li>
+              </ul>
+              <li>Future Trends: </li>
+              <ul>
+                <li>Leveraging technology and data analytics will enhance traffic management for efficiency and
+                  sustainability.</li>
+                <li>Integrating data from multiple sources, including vehicles and smartphones, will offer deeper
+                  insights into traffic patterns.</li>
+                <li>Emphasis on regional and network-oriented approaches will address complex mobility challenges
+                  effectively.</li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Future Enhancements:
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+              <li>Integration of Emergency Vehicle Detection: Implementing algorithms to detect emergency vehicles such
+                as fire trucks and ambulances can improve response times by prioritizing their movement through traffic.
+              </li>
+              <li>Pedestrian Detection and Safety Features: Including pedestrian detection capabilities to enhance
+                safety at intersections and crosswalks, reducing the risk of accidents involving pedestrians.</li>
+              <li>Smart Traffic Routing: Developing intelligent routing algorithms to optimize traffic flow dynamically
+                based on real-time conditions, including road closures, accidents, and events.</li>
+              <li>Vehicle-to-Infrastructure Communication: Integrating vehicle-to-infrastructure (V2I) communication
+                technologies to enable vehicles to receive real-time traffic updates and optimize their routes
+                accordingly.</li>
+              <li>Environmental Impact Monitoring: Incorporating sensors and analytics to monitor air quality, noise
+                levels, and other environmental factors to assess the project's impact on the environment and support
+                sustainability initiatives.</li>
+              <li>Adaptive Signal Control: Enhancing traffic signal control systems with adaptive capabilities to adjust
+                signal timings in response to changing traffic patterns and demand.</li>
+              <li>Multi-Modal Integration: Integrating various modes of transportation, such as public transit and
+                ride-sharing services, to provide comprehensive travel information and promote multimodal transportation
+                options.</li>
+              <li>Predictive Analytics: Implementing predictive analytics models to forecast traffic patterns and
+                congestion levels, allowing for proactive traffic management strategies and improved resource
+                allocation.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            Team and Partners
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <h4>Team "Dhum Dhadaka"</h4>
+              <li>Piyush Raj</li>
+              <li>Aryan Raman</li>
+              <li>Alok Sinha</li>
+              <li>Sandhya Gupta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <br>
+    <p>&copy; 2024 TraCog by Piyush Raj</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
